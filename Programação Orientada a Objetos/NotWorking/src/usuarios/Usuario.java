@@ -24,5 +24,10 @@ public class Usuario
 	{
 		System.out.print("Nome: " + this.nome + "\nMatricula: " + this.matricula);
 	}
-		
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Nome: " + this.nome + "\nMatricula: " + this.matricula;
+	}
 }
