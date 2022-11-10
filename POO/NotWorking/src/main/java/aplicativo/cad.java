@@ -33,13 +33,13 @@ public class cad {
 
 		//======== test ========
 		{
-			test.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing
-			. border. EmptyBorder( 0, 0, 0, 0) , "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax. swing. border. TitledBorder
-			. CENTER, javax. swing. border. TitledBorder. BOTTOM, new java .awt .Font ("D\u0069alog" ,java .
-			awt .Font .BOLD ,12 ), java. awt. Color. red) ,test. getBorder( )) )
-			; test. addPropertyChangeListener (new java. beans. PropertyChangeListener( ){ @Override public void propertyChange (java .beans .PropertyChangeEvent e
-			) {if ("\u0062order" .equals (e .getPropertyName () )) throw new RuntimeException( ); }} )
-			;
+			test.setBorder ( new javax . swing. border .CompoundBorder ( new javax . swing. border .TitledBorder ( new
+			javax . swing. border .EmptyBorder ( 0, 0 ,0 , 0) ,  "JF\u006frmDes\u0069gner \u0045valua\u0074ion" , javax
+			. swing .border . TitledBorder. CENTER ,javax . swing. border .TitledBorder . BOTTOM, new java
+			. awt .Font ( "D\u0069alog", java .awt . Font. BOLD ,12 ) ,java . awt
+			. Color .red ) ,test. getBorder () ) ); test. addPropertyChangeListener( new java. beans .
+			PropertyChangeListener ( ){ @Override public void propertyChange (java . beans. PropertyChangeEvent e) { if( "\u0062order" .
+			equals ( e. getPropertyName () ) )throw new RuntimeException( ) ;} } );
 
 			//---- label1 ----
 			label1.setText("Nome:");
@@ -65,26 +65,23 @@ public class cad {
 			testLayout.setHorizontalGroup(
 				testLayout.createParallelGroup()
 					.addGroup(testLayout.createSequentialGroup()
-						.addContainerGap(400, Short.MAX_VALUE)
+						.addGap(345, 345, 345)
 						.addGroup(testLayout.createParallelGroup()
-							.addGroup(GroupLayout.Alignment.TRAILING, testLayout.createSequentialGroup()
-								.addGroup(testLayout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
-									.addComponent(label1, GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
-									.addComponent(textField1, GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
-									.addComponent(label2, GroupLayout.PREFERRED_SIZE, 56, GroupLayout.PREFERRED_SIZE)
-									.addComponent(textField2, GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
-									.addComponent(label3, GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
-									.addComponent(button1, GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
-									.addComponent(passwordField1, GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE))
-								.addGap(395, 395, 395))
-							.addGroup(GroupLayout.Alignment.TRAILING, testLayout.createSequentialGroup()
-								.addComponent(label4)
-								.addGap(372, 372, 372))))
+							.addComponent(label3, GroupLayout.PREFERRED_SIZE, 151, GroupLayout.PREFERRED_SIZE)
+							.addComponent(label1, GroupLayout.PREFERRED_SIZE, 151, GroupLayout.PREFERRED_SIZE)
+							.addGroup(testLayout.createParallelGroup()
+								.addComponent(passwordField1, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE)
+								.addComponent(label4, GroupLayout.Alignment.TRAILING)
+								.addComponent(textField2, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE)
+								.addComponent(textField1, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE)
+								.addComponent(button1, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE))
+							.addComponent(label2, GroupLayout.PREFERRED_SIZE, 56, GroupLayout.PREFERRED_SIZE))
+						.addContainerGap(362, Short.MAX_VALUE))
 			);
 			testLayout.setVerticalGroup(
 				testLayout.createParallelGroup()
-					.addGroup(testLayout.createSequentialGroup()
-						.addGap(128, 128, 128)
+					.addGroup(GroupLayout.Alignment.TRAILING, testLayout.createSequentialGroup()
+						.addContainerGap(168, Short.MAX_VALUE)
 						.addComponent(label4)
 						.addGap(35, 35, 35)
 						.addComponent(label1)
@@ -100,7 +97,7 @@ public class cad {
 						.addComponent(passwordField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addGap(18, 18, 18)
 						.addComponent(button1, GroupLayout.PREFERRED_SIZE, 39, GroupLayout.PREFERRED_SIZE)
-						.addContainerGap(221, Short.MAX_VALUE))
+						.addGap(111, 111, 111))
 			);
 		}
 		// JFormDesigner - End of component initialization  //GEN-END:initComponents  @formatter:on
@@ -122,7 +119,7 @@ public class cad {
 		JFrame frame = new JFrame();
 		frame.pack();
 		frame.setContentPane(new cad().test);
-		frame.setSize(1440, 900);
+		frame.setSize(895, 560);
 		frame.setVisible(true);
 	}
 }
