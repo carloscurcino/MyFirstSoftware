@@ -1,0 +1,49 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space ::400:x, par l {seq t {par l:::p {comp label1::::151:x, comp textField1::::151:x, comp label2:::p:56:p, comp textField2::l::151:x, comp label3::::151:x, comp button1::l::151:x, comp passwordField1::::151:x}, space :p:395:p}, seq t {comp label4:::p::p, space :p:372:p}}}}"
+			"$verticalGroup": "par l {seq l {space :p:128:p, comp label4:::p::p, space :p:35:p, comp label1:::p::p, space :::p, comp textField1:::p::p, space u:::p, comp label2:::p::p, space :::p, comp textField2:::p::p, space :::p, comp label3:::p::p, space :p:2:p, comp passwordField1:::p::p, space s:::p, comp button1:::p:39:p, space ::221:x}}"
+		} ) {
+			name: "test"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Nome:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Matricula:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Cadastrar"
+				"background": sfield java.awt.Color blue
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Senha:"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "NotWorking"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 20, false )
+				"foreground": sfield java.awt.Color blue
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 960, 630 )
+		} )
+	}
+}
