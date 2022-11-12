@@ -1,4 +1,4 @@
-package aplicativo;
+package view;
 
 public class MigLayout {
 
