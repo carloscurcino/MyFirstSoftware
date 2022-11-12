@@ -1,4 +1,4 @@
-package aplicativo;
+package view;
 
 import java.awt.*;
 import javax.swing.*;
@@ -8,12 +8,14 @@ import javax.swing.LayoutStyle;
  * Created by JFormDesigner on Wed Nov 09 21:29:06 BRT 2022
  */
 
+import model.BusinesRule;
+
 
 
 /**
  * @author carlosdanielf541@gmail.com
  */
-public class cad {
+public class cad implements BusinesRule{
 	public cad() {
 		initComponents();
 	}
