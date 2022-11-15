@@ -37,7 +37,30 @@ public class Problema {
         this.img = img2;
     }
     //GETTERS
+    public byte getImg() {
+		return this.img;
+	}
 
+	public String getLocal() {
+		return this.local;
+	}
+
+	public String getObjeto() {
+		return this.objeto;
+	}
+
+	public String getDescriao() {
+		return this.descriao;
+	}
+
+	public String getUrgencia() {
+		return this.urgencia;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+    
 
     //METODOS
 

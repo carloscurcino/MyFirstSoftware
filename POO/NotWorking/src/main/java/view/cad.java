@@ -32,16 +32,16 @@ public class cad implements BusinesRule{
 		label3 = new JLabel();
 		passwordField1 = new JPasswordField();
 		label4 = new JLabel();
+		toggleButton1 = new JToggleButton();
 
 		//======== test ========
 		{
-			test.setBorder ( new javax . swing. border .CompoundBorder ( new javax . swing. border .TitledBorder ( new
-			javax . swing. border .EmptyBorder ( 0, 0 ,0 , 0) ,  "JF\u006frmDes\u0069gner \u0045valua\u0074ion" , javax
-			. swing .border . TitledBorder. CENTER ,javax . swing. border .TitledBorder . BOTTOM, new java
-			. awt .Font ( "D\u0069alog", java .awt . Font. BOLD ,12 ) ,java . awt
-			. Color .red ) ,test. getBorder () ) ); test. addPropertyChangeListener( new java. beans .
-			PropertyChangeListener ( ){ @Override public void propertyChange (java . beans. PropertyChangeEvent e) { if( "\u0062order" .
-			equals ( e. getPropertyName () ) )throw new RuntimeException( ) ;} } );
+			test.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing. border. EmptyBorder
+			( 0, 0, 0, 0) , "JF\u006frmD\u0065sig\u006eer \u0045val\u0075ati\u006fn", javax. swing. border. TitledBorder. CENTER, javax. swing. border
+			. TitledBorder. BOTTOM, new java .awt .Font ("Dia\u006cog" ,java .awt .Font .BOLD ,12 ), java. awt
+			. Color. red) ,test. getBorder( )) ); test. addPropertyChangeListener (new java. beans. PropertyChangeListener( ){ @Override public void
+			propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062ord\u0065r" .equals (e .getPropertyName () )) throw new RuntimeException( )
+			; }} );
 
 			//---- label1 ----
 			label1.setText("Nome:");
@@ -62,6 +62,9 @@ public class cad implements BusinesRule{
 			label4.setFont(label4.getFont().deriveFont(label4.getFont().getStyle() | Font.BOLD, label4.getFont().getSize() + 20f));
 			label4.setForeground(Color.blue);
 
+			//---- toggleButton1 ----
+			toggleButton1.setText("test");
+
 			GroupLayout testLayout = new GroupLayout(test);
 			test.setLayout(testLayout);
 			testLayout.setHorizontalGroup(
@@ -71,14 +74,17 @@ public class cad implements BusinesRule{
 						.addGroup(testLayout.createParallelGroup()
 							.addComponent(label3, GroupLayout.PREFERRED_SIZE, 151, GroupLayout.PREFERRED_SIZE)
 							.addComponent(label1, GroupLayout.PREFERRED_SIZE, 151, GroupLayout.PREFERRED_SIZE)
-							.addGroup(testLayout.createParallelGroup()
-								.addComponent(passwordField1, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE)
-								.addComponent(label4, GroupLayout.Alignment.TRAILING)
-								.addComponent(textField2, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE)
-								.addComponent(textField1, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE)
-								.addComponent(button1, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE))
+							.addGroup(testLayout.createSequentialGroup()
+								.addGroup(testLayout.createParallelGroup()
+									.addComponent(passwordField1, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE)
+									.addComponent(label4, GroupLayout.Alignment.TRAILING)
+									.addComponent(textField2, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE)
+									.addComponent(textField1, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE)
+									.addComponent(button1, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE))
+								.addGap(119, 119, 119)
+								.addComponent(toggleButton1))
 							.addComponent(label2, GroupLayout.PREFERRED_SIZE, 56, GroupLayout.PREFERRED_SIZE))
-						.addContainerGap(362, Short.MAX_VALUE))
+						.addContainerGap(193, Short.MAX_VALUE))
 			);
 			testLayout.setVerticalGroup(
 				testLayout.createParallelGroup()
@@ -98,7 +104,9 @@ public class cad implements BusinesRule{
 						.addGap(2, 2, 2)
 						.addComponent(passwordField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addGap(18, 18, 18)
-						.addComponent(button1, GroupLayout.PREFERRED_SIZE, 39, GroupLayout.PREFERRED_SIZE)
+						.addGroup(testLayout.createParallelGroup()
+							.addComponent(button1, GroupLayout.PREFERRED_SIZE, 39, GroupLayout.PREFERRED_SIZE)
+							.addComponent(toggleButton1))
 						.addGap(111, 111, 111))
 			);
 		}
@@ -116,8 +124,9 @@ public class cad implements BusinesRule{
 	private JLabel label3;
 	private JPasswordField passwordField1;
 	private JLabel label4;
+	private JToggleButton toggleButton1;
 	// JFormDesigner - End of variables declaration  //GEN-END:variables  @formatter:on
-	public static void main(String[] args) {
+	public static void run(){
 		JFrame frame = new JFrame();
 		frame.pack();
 		frame.setContentPane(new cad().test);
