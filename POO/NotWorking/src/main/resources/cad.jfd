@@ -4,8 +4,8 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq l {space :p:345:p, par l {comp label3:::p:151:p, comp label1:::p:151:p, seq l {par l {comp passwordField1::t:p:188:p, comp label4::t:p::p, comp textField2::t:p:188:p, comp textField1::t:p:188:p, comp button1::t:p:188:p}, space :p:119:p, comp toggleButton1:::p::p}, comp label2::l:p:56:p}, space ::193:x}}"
-			"$verticalGroup": "par l {seq t {space ::168:x, comp label4:::p::p, space :p:35:p, comp label1:::p::p, space :::p, comp textField1:::p::p, space u:::p, comp label2:::p::p, space :::p, comp textField2:::p::p, space :::p, comp label3:::p::p, space :p:2:p, comp passwordField1:::p::p, space s:::p, par l {comp button1:::p:39:p, comp toggleButton1:::p::p}, space :p:111:p}}"
+			"$horizontalGroup": "par l {seq l {space :p:345:p, par l {comp label5:::p::p, comp label4:::p::p, comp label3:::p:151:p, comp label1:::p:151:p, par l:l {comp passwordField1::t:p:188:p, comp textField2::t:p:188:p, comp textField1::t:p:188:p, comp button1::t:p:188:p}, comp label2::l:p:56:p}, space ::362:x}}"
+			"$verticalGroup": "par l {seq t {space ::113:x, comp label4:::p::p, space :p:33:p, comp label1:::p::p, space :::p, comp textField1:::p::p, space u:::p, comp label2:::p::p, space :::p, comp textField2:::p::p, space :::p, comp label3:::p::p, space :p:2:p, comp passwordField1:::p::p, space s:::p, comp button1:::p:39:p, space :::p, comp label5:::p::p, space :p:146:p}}"
 		} ) {
 			name: "test"
 			add( new FormComponent( "javax.swing.JLabel" ) {
@@ -25,8 +25,7 @@ new FormModel {
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "button1"
 				"text": "Cadastrar"
-				"background": sfield java.awt.Color blue
-				"foreground": sfield java.awt.Color white
+				"background": new java.awt.Color( 57, 154, 185, 255 )
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label3"
@@ -37,13 +36,12 @@ new FormModel {
 			} )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label4"
-				"text": "NotWorking"
+				"text": "Cadastre-se"
 				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 20, false )
-				"foreground": sfield java.awt.Color blue
 			} )
-			add( new FormComponent( "javax.swing.JToggleButton" ) {
-				name: "toggleButton1"
-				"text": "test"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Já possui conta? Entre agora"
 			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )

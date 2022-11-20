@@ -1,0 +1,52 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:446:p, comp label1:::p::p, space ::466:x}, seq t {space :::x, comp panel1:::p::p, space :p:110:p}}"
+			"$verticalGroup": "par l {seq l {space :p:29:p, comp label1:::p::p, space u:::p, comp panel1:::p::p, space ::70:x}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Problema"
+				"font": new java.awt.Font( "Segoe UI", 0, 28 )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {comp panel2:::p::p, space :p:42:p, par l {comp label2:::p:197:p, comp panel3:::p::p}, space :0:46:x}}"
+				"$verticalGroup": "par l {comp panel2::l:::x, seq l {space :p:27:p, comp label2:::p:28:p, space :p:91:p, comp panel3:::p::p, space ::33:x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 57, 154, 185, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {space :0:405:x}"
+					"$verticalGroup": "par l {space :0:401:x}"
+				} ) {
+					name: "panel2"
+					"background": sfield java.awt.Color blue
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Problema X"
+					"font": new java.awt.Font( "Segoe UI", 1, 20 )
+					"foreground": sfield java.awt.Color white
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:19:p, comp label3:::p::p, space ::274:x}}"
+					"$verticalGroup": "par l {seq l {space :p:22:p, comp label3:::p::p, space ::184:x}}"
+				} ) {
+					name: "panel3"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "Descrição vem aqui"
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1030, 550 )
+		} )
+	}
+}
