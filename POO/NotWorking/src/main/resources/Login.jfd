@@ -1,0 +1,61 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {space :0:820:x};par l {seq {space :0:0:x, comp test:::p::p, space :0:0:x}}"
+			"$verticalGroup": "par l {space :0:565:x};par l {seq {space :0:0:x, comp test:::p::p, space :0:0:x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :p:325:p, par l {comp label5:::p::p, comp label4:::p::p, comp label3:::p:151:p, par l:l {comp passwordField1::t:p:188:p, comp textField2::t:p:188:p, comp textField1::t:p:188:p, comp button1::t:p:188:p}, comp label2::l:p:56:p, comp label1::l:p:151:p, comp label6::l:p:155:p}, space ::434:x}}"
+				"$verticalGroup": "par l {seq t {comp label4:::p::p, space :p:41:p, comp label1:::p::p, space :::p, comp textField1:::p::p, space u:::p, comp label2:::p::p, space :::p, comp textField2:::p::p, space :::p, comp label3:::p::p, space :p:2:p, comp passwordField1:::p::p, space s:::p, comp button1:::p:39:p, space :::p, comp label5:::p::p, space :::p, comp label6:::p::p, space ::47:x}}"
+			} ) {
+				name: "test"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Nome:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Matricula:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField2"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Entrar"
+					"background": new java.awt.Color( 57, 154, 185, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Senha:"
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "passwordField1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "NotWorking"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 20, false )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Esqueceu senha?"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Não possui conta? Crie agora"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 75, 5 )
+			"size": new java.awt.Dimension( 820, 565 )
+		} )
+	}
+}
