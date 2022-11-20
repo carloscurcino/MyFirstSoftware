@@ -37,7 +37,7 @@ public class Problema {
         this.img = img2;
     }
     //GETTERS
-    public byte getImg() {
+  public byte getImg() {
 		return this.img;
 	}
 
