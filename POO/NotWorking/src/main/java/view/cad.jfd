@@ -4,10 +4,11 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq l {space :p:345:p, par l {comp label5:::p::p, comp label4:::p::p, comp label3:::p:151:p, comp label1:::p:151:p, par l:l {comp passwordField1::t:p:188:p, comp textField2::t:p:188:p, comp textField1::t:p:188:p, comp button1::t:p:188:p}, comp label2::l:p:56:p}, space ::362:x}}"
-			"$verticalGroup": "par l {seq t {space ::113:x, comp label4:::p::p, space :p:33:p, comp label1:::p::p, space :::p, comp textField1:::p::p, space u:::p, comp label2:::p::p, space :::p, comp textField2:::p::p, space :::p, comp label3:::p::p, space :p:2:p, comp passwordField1:::p::p, space s:::p, comp button1:::p:39:p, space :::p, comp label5:::p::p, space :p:146:p}}"
+			"$horizontalGroup": "par l {seq l {space :p:345:p, par l {seq l {comp label5:::::x, space :40:40:p}, seq l {comp label4:::::x, space :14:14:p}, seq l {comp label3:::::x, space :37:37:p}, seq l {comp label1:::::x, space :37:37:p}, comp passwordField1::t:::x, comp textField2::t:::x, comp textField1::t:::x, comp button1::t:::x, seq l {comp label2:::::x, space :132:132:p}}, space :p:362:p}}"
+			"$verticalGroup": "par l {seq t {space :p:113:p, comp label4:::::x, space :p:33:p, comp label1:::::x, space :p::p, comp textField1:::::x, space u:p::p, comp label2:::::x, space :p::p, comp textField2:::::x, space :p::p, comp label3:::::x, space :p:2:p, comp passwordField1:::::x, space s:p::p, comp button1::::39:x, space :p::p, comp label5:::::x, space :p:146:p}}"
 		} ) {
 			name: "test"
+			"background": sfield java.awt.Color white
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label1"
 				"text": "Nome:"
