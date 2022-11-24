@@ -1,10 +1,10 @@
 package view;
-
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.GroupLayout;
+import javax.swing.LayoutStyle;
 /*
- * Created by JFormDesigner on Wed Nov 23 16:01:08 BRT 2022
+ * Created by JFormDesigner on Wed Nov 23 22:50:48 BRT 2022
  */
 
 
@@ -12,31 +12,31 @@ import javax.swing.GroupLayout;
 /**
  * @author carlosdanielf541@gmail.com
  */
-public class ProblemasResolvidos  {
+public class Status  {
 
 	private void initComponents() {
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
 		// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
-		problemResolv = new JPanel();
+		Stats = new JPanel();
 		label1 = new JLabel();
 		panel1 = new JPanel();
 		panel2 = new JPanel();
 		label2 = new JLabel();
 		label3 = new JLabel();
 
-		//======== problemResolv ========
+		//======== Stats ========
 		{
-			problemResolv.setBackground(Color.white);
-			problemResolv.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new
-			javax.swing.border.EmptyBorder(0,0,0,0), "JFor\u006dDesi\u0067ner \u0045valu\u0061tion",javax
-			.swing.border.TitledBorder.CENTER,javax.swing.border.TitledBorder.BOTTOM,new java
-			.awt.Font("Dia\u006cog",java.awt.Font.BOLD,12),java.awt
-			.Color.red),problemResolv. getBorder()));problemResolv. addPropertyChangeListener(new java.beans.
-			PropertyChangeListener(){@Override public void propertyChange(java.beans.PropertyChangeEvent e){if("bord\u0065r".
-			equals(e.getPropertyName()))throw new RuntimeException();}});
+			Stats.setBackground(Color.white);
+			Stats.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax
+			.swing.border.EmptyBorder(0,0,0,0), "JF\u006frmDes\u0069gner \u0045valua\u0074ion",javax.swing
+			.border.TitledBorder.CENTER,javax.swing.border.TitledBorder.BOTTOM,new java.awt.
+			Font("D\u0069alog",java.awt.Font.BOLD,12),java.awt.Color.red
+			),Stats. getBorder()));Stats. addPropertyChangeListener(new java.beans.PropertyChangeListener(){@Override
+			public void propertyChange(java.beans.PropertyChangeEvent e){if("\u0062order".equals(e.getPropertyName(
+			)))throw new RuntimeException();}});
 
 			//---- label1 ----
-			label1.setText("Problemas Resolvidas");
+			label1.setText("Status");
 			label1.setFont(new Font("Segoe UI", Font.PLAIN, 28));
 
 			//======== panel1 ========
@@ -53,7 +53,7 @@ public class ProblemasResolvidos  {
 					label2.setFont(new Font("Segoe UI", Font.PLAIN, 20));
 
 					//---- label3 ----
-					label3.setText("Desenho check");
+					label3.setText("Status de resolu\u00e7\u00e3o");
 					label3.setFont(new Font("Segoe UI", Font.PLAIN, 16));
 
 					GroupLayout panel2Layout = new GroupLayout(panel2);
@@ -96,26 +96,23 @@ public class ProblemasResolvidos  {
 				);
 			}
 
-			GroupLayout problemResolvLayout = new GroupLayout(problemResolv);
-			problemResolv.setLayout(problemResolvLayout);
-			problemResolvLayout.setHorizontalGroup(
-				problemResolvLayout.createParallelGroup()
-					.addGroup(problemResolvLayout.createSequentialGroup()
-						.addGroup(problemResolvLayout.createParallelGroup()
-							.addGroup(problemResolvLayout.createSequentialGroup()
-								.addGap(131, 131, 131)
-								.addComponent(panel1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-							.addGroup(problemResolvLayout.createSequentialGroup()
-								.addGap(377, 377, 377)
-								.addComponent(label1)))
-						.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+			GroupLayout StatsLayout = new GroupLayout(Stats);
+			Stats.setLayout(StatsLayout);
+			StatsLayout.setHorizontalGroup(
+				StatsLayout.createParallelGroup()
+					.addGroup(StatsLayout.createSequentialGroup()
+						.addGap(131, 131, 131)
+						.addComponent(panel1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+					.addGroup(StatsLayout.createSequentialGroup()
+						.addGap(518, 518, 518)
+						.addComponent(label1))
 			);
-			problemResolvLayout.setVerticalGroup(
-				problemResolvLayout.createParallelGroup()
-					.addGroup(GroupLayout.Alignment.TRAILING, problemResolvLayout.createSequentialGroup()
-						.addContainerGap(62, Short.MAX_VALUE)
+			StatsLayout.setVerticalGroup(
+				StatsLayout.createParallelGroup()
+					.addGroup(GroupLayout.Alignment.TRAILING, StatsLayout.createSequentialGroup()
+						.addContainerGap(48, Short.MAX_VALUE)
 						.addComponent(label1)
-						.addGap(18, 18, 18)
+						.addGap(32, 32, 32)
 						.addComponent(panel1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addGap(48, 48, 48))
 			);
@@ -125,7 +122,7 @@ public class ProblemasResolvidos  {
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables  @formatter:off
 	// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
-	private JPanel problemResolv;
+	private JPanel Stats;
 	private JLabel label1;
 	private JPanel panel1;
 	private JPanel panel2;
@@ -134,8 +131,9 @@ public class ProblemasResolvidos  {
 	// JFormDesigner - End of variables declaration  //GEN-END:variables  @formatter:on
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
-		frame.setContentPane(new ProblemasResolvidos().problemResolv);
+		frame.pack();
+		frame.setContentPane(new Status().Stats);
 		frame.setSize(895, 560);
 		frame.setVisible(true);
-	}
+	} 
 }

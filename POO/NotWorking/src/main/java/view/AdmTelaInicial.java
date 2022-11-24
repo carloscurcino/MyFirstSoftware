@@ -1,10 +1,12 @@
 package view;
 import java.awt.*;
+import java.awt.Component;
 import javax.swing.*;
 import javax.swing.GroupLayout;
 import javax.swing.LayoutStyle;
+import javax.swing.SwingConstants;
 /*
- * Created by JFormDesigner on Mon Nov 21 23:01:51 BRT 2022
+ * Created by JFormDesigner on Wed Nov 23 23:10:49 BRT 2022
  */
 
 
@@ -12,15 +14,12 @@ import javax.swing.LayoutStyle;
 /**
  * @author carlosdanielf541@gmail.com
  */
-public class TelaInicialLoged extends JPanel {
-	public TelaInicialLoged() {
-		initComponents();
-	}
+public class AdmTelaInicial  {
 
 	private void initComponents() {
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
 		// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
-		TelaLoged = new JPanel();
+		AdmTela = new JPanel();
 		label1 = new JLabel();
 		label2 = new JLabel();
 		label3 = new JLabel();
@@ -29,26 +28,26 @@ public class TelaInicialLoged extends JPanel {
 		button2 = new JButton();
 		button3 = new JButton();
 
-		//======== TelaLoged ========
+		//======== AdmTela ========
 		{
-			TelaLoged.setBackground(Color.white);
-			TelaLoged.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax.swing.border.
-			EmptyBorder(0,0,0,0), "JF\u006frmDes\u0069gner \u0045valua\u0074ion",javax.swing.border.TitledBorder.CENTER,javax.swing
-			.border.TitledBorder.BOTTOM,new java.awt.Font("D\u0069alog",java.awt.Font.BOLD,12),
-			java.awt.Color.red),TelaLoged. getBorder()));TelaLoged. addPropertyChangeListener(new java.beans.PropertyChangeListener()
-			{@Override public void propertyChange(java.beans.PropertyChangeEvent e){if("\u0062order".equals(e.getPropertyName()))
-			throw new RuntimeException();}});
+			AdmTela.setBackground(Color.white);
+			AdmTela.setBorder ( new javax . swing. border .CompoundBorder ( new javax . swing. border .TitledBorder ( new javax . swing.
+			border .EmptyBorder ( 0, 0 ,0 , 0) ,  "JF\u006frmDes\u0069gner \u0045valua\u0074ion" , javax. swing .border . TitledBorder. CENTER
+			,javax . swing. border .TitledBorder . BOTTOM, new java. awt .Font ( "D\u0069alog", java .awt . Font
+			. BOLD ,12 ) ,java . awt. Color .red ) ,AdmTela. getBorder () ) ); AdmTela. addPropertyChangeListener(
+			new java. beans .PropertyChangeListener ( ){ @Override public void propertyChange (java . beans. PropertyChangeEvent e) { if( "\u0062order"
+			.equals ( e. getPropertyName () ) )throw new RuntimeException( ) ;} } );
 
 			//---- label1 ----
-			label1.setText("Seja bem vindo, aluno!");
+			label1.setText("Seja bem vindo, T\u00e9cnico!");
 			label1.setFont(new Font("Segoe UI", Font.BOLD, 26));
 
 			//---- label2 ----
-			label2.setText("Num\u00e9ro de matricula: 202240228922");
+			label2.setText("Num\u00e9ro de matricula: 1337");
 			label2.setFont(label2.getFont().deriveFont(18f));
 
 			//---- label3 ----
-			label3.setText("Num\u00e9ro de problemas enviados: 0");
+			label3.setText("Num\u00e9ro de problemas resolvidos: 0");
 			label3.setFont(label3.getFont().deriveFont(18f));
 
 			//======== panel1 ========
@@ -62,7 +61,7 @@ public class TelaInicialLoged extends JPanel {
 				button2.setText("Resolvidos");
 
 				//---- button3 ----
-				button3.setText("Enviar");
+				button3.setText("Problemas enviados");
 
 				GroupLayout panel1Layout = new GroupLayout(panel1);
 				panel1.setLayout(panel1Layout);
@@ -89,26 +88,26 @@ public class TelaInicialLoged extends JPanel {
 				);
 			}
 
-			GroupLayout TelaLogedLayout = new GroupLayout(TelaLoged);
-			TelaLoged.setLayout(TelaLogedLayout);
-			TelaLogedLayout.setHorizontalGroup(
-				TelaLogedLayout.createParallelGroup()
-					.addGroup(GroupLayout.Alignment.TRAILING, TelaLogedLayout.createSequentialGroup()
+			GroupLayout AdmTelaLayout = new GroupLayout(AdmTela);
+			AdmTela.setLayout(AdmTelaLayout);
+			AdmTelaLayout.setHorizontalGroup(
+				AdmTelaLayout.createParallelGroup()
+					.addGroup(GroupLayout.Alignment.TRAILING, AdmTelaLayout.createSequentialGroup()
 						.addComponent(panel1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addGap(110, 110, 110)
-						.addGroup(TelaLogedLayout.createParallelGroup(GroupLayout.Alignment.CENTER)
-							.addComponent(label1, GroupLayout.PREFERRED_SIZE, 296, GroupLayout.PREFERRED_SIZE)
+						.addGroup(AdmTelaLayout.createParallelGroup(GroupLayout.Alignment.CENTER)
 							.addComponent(label2)
-							.addComponent(label3, GroupLayout.PREFERRED_SIZE, 296, GroupLayout.PREFERRED_SIZE))
-						.addGap(173, 173, 173))
+							.addComponent(label3, GroupLayout.PREFERRED_SIZE, 296, GroupLayout.PREFERRED_SIZE)
+							.addComponent(label1, GroupLayout.PREFERRED_SIZE, 336, GroupLayout.PREFERRED_SIZE))
+						.addGap(133, 133, 133))
 			);
-			TelaLogedLayout.linkSize(SwingConstants.HORIZONTAL, new Component[] {label1, label2, label3});
-			TelaLogedLayout.setVerticalGroup(
-				TelaLogedLayout.createParallelGroup()
-					.addGroup(TelaLogedLayout.createSequentialGroup()
+			AdmTelaLayout.linkSize(SwingConstants.HORIZONTAL, new Component[] {label2, label3});
+			AdmTelaLayout.setVerticalGroup(
+				AdmTelaLayout.createParallelGroup()
+					.addGroup(AdmTelaLayout.createSequentialGroup()
 						.addComponent(panel1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addContainerGap())
-					.addGroup(TelaLogedLayout.createSequentialGroup()
+					.addGroup(AdmTelaLayout.createSequentialGroup()
 						.addGap(188, 188, 188)
 						.addComponent(label1)
 						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
@@ -117,14 +116,14 @@ public class TelaInicialLoged extends JPanel {
 						.addComponent(label3, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
 						.addContainerGap(227, Short.MAX_VALUE))
 			);
-			TelaLogedLayout.linkSize(SwingConstants.VERTICAL, new Component[] {label1, label2, label3});
+			AdmTelaLayout.linkSize(SwingConstants.VERTICAL, new Component[] {label1, label2, label3});
 		}
 		// JFormDesigner - End of component initialization  //GEN-END:initComponents  @formatter:on
 	}
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables  @formatter:off
 	// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
-	private JPanel TelaLoged;
+	private JPanel AdmTela;
 	private JLabel label1;
 	private JLabel label2;
 	private JLabel label3;
@@ -136,7 +135,7 @@ public class TelaInicialLoged extends JPanel {
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
 		frame.pack();
-		frame.setContentPane(new TelaInicialLoged().TelaLoged);
+		frame.setContentPane(new AdmTelaInicial().AdmTela);
 		frame.setSize(895, 560);
 		frame.setVisible(true);
 	}

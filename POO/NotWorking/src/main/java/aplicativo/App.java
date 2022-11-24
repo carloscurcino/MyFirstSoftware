@@ -8,7 +8,7 @@ public class App {
 public static void main(String[] args) {
     Conection con = new Conection();
 		con.getConexao();
-    cad.run();
+    //cad.run();
 }
 
 }
