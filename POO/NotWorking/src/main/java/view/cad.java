@@ -1,16 +1,21 @@
 package view;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import javax.swing.*;
-import javax.swing.GroupLayout;
-import javax.swing.LayoutStyle;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+
+
 /*
  * Created by JFormDesigner on Wed Nov 09 21:29:06 BRT 2022
  */
 
 import model.BusinesRule;
 
-
+import controller.UsuarioController;
 
 /**
  * @author carlosdanielf541@gmail.com
@@ -22,7 +27,7 @@ public class cad implements BusinesRule{
 
 	private void initComponents() {
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
-		// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
+		// Generated using JFormDesigner Evaluation license - Victor
 		test = new JPanel();
 		label1 = new JLabel();
 		textField1 = new JTextField();
@@ -32,16 +37,17 @@ public class cad implements BusinesRule{
 		label3 = new JLabel();
 		passwordField1 = new JPasswordField();
 		label4 = new JLabel();
+		label5 = new JLabel();
+		
 
 		//======== test ========
 		{
-			test.setBorder ( new javax . swing. border .CompoundBorder ( new javax . swing. border .TitledBorder ( new
-			javax . swing. border .EmptyBorder ( 0, 0 ,0 , 0) ,  "JF\u006frmDes\u0069gner \u0045valua\u0074ion" , javax
-			. swing .border . TitledBorder. CENTER ,javax . swing. border .TitledBorder . BOTTOM, new java
-			. awt .Font ( "D\u0069alog", java .awt . Font. BOLD ,12 ) ,java . awt
-			. Color .red ) ,test. getBorder () ) ); test. addPropertyChangeListener( new java. beans .
-			PropertyChangeListener ( ){ @Override public void propertyChange (java . beans. PropertyChangeEvent e) { if( "\u0062order" .
-			equals ( e. getPropertyName () ) )throw new RuntimeException( ) ;} } );
+			test.setBackground(Color.white);
+			test.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing. border. EmptyBorder(
+			0, 0, 0, 0) , "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax. swing. border. TitledBorder. CENTER, javax. swing. border. TitledBorder
+			. BOTTOM, new java .awt .Font ("D\u0069alog" ,java .awt .Font .BOLD ,12 ), java. awt. Color.
+			red) ,test. getBorder( )) ); test. addPropertyChangeListener (new java. beans. PropertyChangeListener( ){ @Override public void propertyChange (java .
+			beans .PropertyChangeEvent e) {if ("\u0062order" .equals (e .getPropertyName () )) throw new RuntimeException( ); }} );
 
 			//---- label1 ----
 			label1.setText("Nome:");
@@ -51,62 +57,91 @@ public class cad implements BusinesRule{
 
 			//---- button1 ----
 			button1.setText("Cadastrar");
-			button1.setBackground(Color.blue);
-			button1.setForeground(Color.white);
+			button1.setBackground(new Color(0x399ab9));
 
 			//---- label3 ----
 			label3.setText("Senha:");
 
 			//---- label4 ----
-			label4.setText("NotWorking");
+			label4.setText("Cadastre-se");
 			label4.setFont(label4.getFont().deriveFont(label4.getFont().getStyle() | Font.BOLD, label4.getFont().getSize() + 20f));
-			label4.setForeground(Color.blue);
+
+			//---- label5 ----
+			label5.setText("J\u00e1 possui conta? Entre agora");
 
 			GroupLayout testLayout = new GroupLayout(test);
 			test.setLayout(testLayout);
 			testLayout.setHorizontalGroup(
 				testLayout.createParallelGroup()
 					.addGroup(testLayout.createSequentialGroup()
-						.addGap(345, 345, 345)
+						.addContainerGap(345, Short.MAX_VALUE)
 						.addGroup(testLayout.createParallelGroup()
-							.addComponent(label3, GroupLayout.PREFERRED_SIZE, 151, GroupLayout.PREFERRED_SIZE)
-							.addComponent(label1, GroupLayout.PREFERRED_SIZE, 151, GroupLayout.PREFERRED_SIZE)
-							.addGroup(testLayout.createParallelGroup()
-								.addComponent(passwordField1, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE)
-								.addComponent(label4, GroupLayout.Alignment.TRAILING)
-								.addComponent(textField2, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE)
-								.addComponent(textField1, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE)
-								.addComponent(button1, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 188, GroupLayout.PREFERRED_SIZE))
-							.addComponent(label2, GroupLayout.PREFERRED_SIZE, 56, GroupLayout.PREFERRED_SIZE))
+							.addGroup(testLayout.createSequentialGroup()
+								.addComponent(label5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+								.addGap(40, 40, 40))
+							.addComponent(label4, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+							.addGroup(testLayout.createSequentialGroup()
+								.addComponent(label3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+								.addGap(37, 37, 37))
+							.addGroup(testLayout.createSequentialGroup()
+								.addComponent(label1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+								.addGap(37, 37, 37))
+							.addComponent(passwordField1, GroupLayout.Alignment.TRAILING)
+							.addComponent(textField2, GroupLayout.Alignment.TRAILING)
+							.addComponent(textField1, GroupLayout.Alignment.TRAILING)
+							.addComponent(button1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+							.addGroup(testLayout.createSequentialGroup()
+								.addComponent(label2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+								.addGap(132, 132, 132)))
 						.addContainerGap(362, Short.MAX_VALUE))
 			);
 			testLayout.setVerticalGroup(
 				testLayout.createParallelGroup()
 					.addGroup(GroupLayout.Alignment.TRAILING, testLayout.createSequentialGroup()
-						.addContainerGap(168, Short.MAX_VALUE)
-						.addComponent(label4)
-						.addGap(35, 35, 35)
-						.addComponent(label1)
+						.addContainerGap(113, Short.MAX_VALUE)
+						.addComponent(label4, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+						.addComponent(label1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(textField1)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(label2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-						.addComponent(textField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-						.addComponent(label2)
+						.addComponent(textField2)
 						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-						.addComponent(textField2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-						.addComponent(label3)
+						.addComponent(label3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addGap(2, 2, 2)
-						.addComponent(passwordField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addGap(18, 18, 18)
-						.addComponent(button1, GroupLayout.PREFERRED_SIZE, 39, GroupLayout.PREFERRED_SIZE)
-						.addGap(111, 111, 111))
+						.addComponent(passwordField1)
+						.addGap(18, 18, Short.MAX_VALUE)
+						.addComponent(button1, GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(label5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addGap(146, 146, 146))
+					
 			);
+			
+			
 		}
-		// JFormDesigner - End of component initialization  //GEN-END:initComponents  @formatter:on
+		
 	}
+	public void actionPerformed(ActionEvent e) {
+		
+		boolean teste;
+		try {
+			UsuarioController userController = new UsuarioController();
+			teste = userController.cadastrarUser(label1.getText(),label2.getText(), label3.getText(), true);
+			if(teste == true) {
+				JOptionPane.showMessageDialog(null,"Cadastro realizado com sucesso.");
+			}else {
+				JOptionPane.showMessageDialog(null,"Há algo de errado com seus dados.");
+			}
+		}catch(Exception ex){
+			JOptionPane.showMessageDialog(null,"Erro: " + ex);
+		}
+	};
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables  @formatter:off
-	// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
+	// Generated using JFormDesigner Evaluation license - Victor
 	private JPanel test;
 	private JLabel label1;
 	private JTextField textField1;
@@ -116,6 +151,7 @@ public class cad implements BusinesRule{
 	private JLabel label3;
 	private JPasswordField passwordField1;
 	private JLabel label4;
+	private JLabel label5;
 	// JFormDesigner - End of variables declaration  //GEN-END:variables  @formatter:on
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();

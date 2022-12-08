@@ -1,12 +1,31 @@
 package aplicativo;
-import model.Conection;
-import model.Usuario;
 
-public class App{
-    public static void main(String[] args) {
-    	Conection con = new Conection();
-		  con.getConexao();
-    }
+
+import controller.ProblemaController; 
+import controller.UsuarioController;
+
+import model.Usuario;
+import model.BusinesRule;
+import model.Conection;
+import model.Problema;
+
+import view.AdmProblemas;
+import view.AdmTelaInicial;
+import view.EnviarProblema;
+import view.cad;
+import view.Login;
+import view.NoLogin;
+import view.Problema;
+import view.ProblemasResolvidos;
+import view.Status;
+import view.TelaInicialLoged;
+
+public class App {
+public static void main(String[] args) {
+    Conection con = new Conection();
+		con.getConexao();
+    //cad.run();
+}
 
 }
 

@@ -1,0 +1,51 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {comp panel1:::p::p, space :p:110:p, par c {comp label2:1:c:p::p, comp label3:1:c:p:296:p, comp label1::c:p:336:p}, space :p:133:p}}"
+			"$verticalGroup": "par l {seq l {comp panel1:::::x, space :::p}, seq l {space :p:188:p, comp label1:2::p::p, space :::p, comp label2:2::p:25:p, space :p::p, comp label3:2::p:25:p, space ::227:x}}"
+		} ) {
+			name: "AdmTela"
+			"background": sfield java.awt.Color white
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Seja bem vindo, Técnico!"
+				"font": new java.awt.Font( "Segoe UI", 1, 26 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Numéro de matricula: 1337"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 18, true )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Numéro de problemas resolvidos: 0"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 18, true )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:18:p, par l:::p {comp button2:::::x, comp button3::l:::x, comp button1::l:p:203:p}, space ::25:x}}"
+				"$verticalGroup": "par l {seq l {space :p:155:p, comp button1:::p:55:p, space s:::p, comp button3:::p:53:p, space s:::p, comp button2:::p:53:p, space ::177:x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 57, 154, 185, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Status"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "Resolvidos"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "Problemas enviados"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 825, 535 )
+		} )
+	}
+}
