@@ -1,11 +1,8 @@
-JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.5" encoding: "UTF-8"
-
 new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq {space ::272:x, par l {comp label2::l:p::p, seq l {space :p:76:p, comp label1:::p::p}}, space ::287:x}}"
-			"$verticalGroup": "par l {seq l {space ::167:x, comp label1:::p:36:p, space u:::x, comp label2:::p::p, space ::250:x}}"
+
 		} ) {
 			name: "NoLogin"
 			"background": sfield java.awt.Color white

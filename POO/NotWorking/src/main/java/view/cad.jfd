@@ -4,8 +4,7 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq l {space ::345:x, par l {seq l {comp label5:::::x, space :40:40:p}, comp label4::l:::x, seq l {comp label3:::::x, space :37:37:p}, seq l {comp label1:::::x, space :37:37:p}, comp passwordField1::t:::x, comp textField2::t:::x, comp textField1::t:::x, comp button1::t:::x, seq l {comp label2:::::x, space :132:132:p}}, space ::362:x}}"
-			"$verticalGroup": "par l {seq t {space ::113:x, comp label4:::::x, space ::33:x, comp label1:::::x, space :::x, comp textField1:::::x, space u:::x, comp label2:::::x, space :::p, comp textField2:::::x, space :::p, comp label3:::::x, space :p:2:p, comp passwordField1:::::x, space s:::x, comp button1::::39:x, space :::x, comp label5:::::x, space :p:146:p}}"
+
 		} ) {
 			name: "test"
 			"background": sfield java.awt.Color white

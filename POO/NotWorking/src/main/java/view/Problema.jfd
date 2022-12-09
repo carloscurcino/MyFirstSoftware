@@ -1,11 +1,8 @@
-JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.5" encoding: "UTF-8"
-
 new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq l {space :p:446:p, comp label1:::p::p, space :::x}, seq t {space :::x, comp panel1:::p::p, space ::105:x}}"
-			"$verticalGroup": "par l {seq l {space :p:29:p, comp label1:::p::p, space u:::x, comp panel1:::p::p, space ::68:x}}"
+
 		} ) {
 			name: "Problem"
 			"background": new java.awt.Color( 255, 255, 255, 255 )
@@ -15,8 +12,7 @@ new FormModel {
 				"font": new java.awt.Font( "Segoe UI", 0, 28 )
 			} )
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-				"$horizontalGroup": "par l {seq l {comp panel2:::p::p, space ::42:x, par l {seq l {par t:::p {comp panel3::l:p::p, seq l {par l {comp label4::l:p::p, comp panel4::l:p::p}, space :p:36:p, par l {comp panel5:::::x, comp label5::t:p::p}}}, space ::76:x}, seq l {comp label2:::p:197:p, space ::106:x, comp label8:::p::p, space :p:65:p}}}}"
-				"$verticalGroup": "par l {comp panel2::l:::x, seq l {space ::27:x, par l {comp label2:::p:28:p, comp label8:::p::p}, space s:::x, par t {comp label4:::p::p, comp label5:::p::p}, space :::p, par t {comp panel4:::p::p, comp panel5:::p::p}, space u:::x, comp panel3:::p::p, space ::40:x}}"
+
 			} ) {
 				name: "panel1"
 				"background": new java.awt.Color( 57, 154, 185, 255 )
