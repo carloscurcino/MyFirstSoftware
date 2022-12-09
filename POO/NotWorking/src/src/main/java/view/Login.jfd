@@ -1,0 +1,59 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::415:x, par l {seq l {comp label5:::::x, space :99:99:p}, comp label4:::::x, seq l {comp label3:::::x, space :37:37:p}, comp passwordField1::t:::x, comp textField2::t:::x, comp textField1::t:::x, comp button1::t:::x, seq l {comp label2:::::x, space :132:132:p}, seq l {comp label1:::::x, space :37:37:p}, seq l {comp label6:::::x, space :13:13:p}}, space ::372:x}}"
+			"$verticalGroup": "par l {seq l {space ::91:x, comp label4::::44:x, space ::41:x, comp label1:::::x, space :::p, comp textField1:::::x, space u:::p, comp label2:::::x, space :p::p, comp textField2:::::x, space :p::p, comp label3:::::x, space :p:2:p, comp passwordField1:::::x, space s:::p, comp button1::::38:x, space :::p, comp label5:::::x, space :p::p, comp label6::::20:x, space :p:129:p}}"
+		} ) {
+			name: "Login"
+			"background": sfield java.awt.Color white
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Nome:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"background": new java.awt.Color( 217, 217, 217, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Matricula:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+				"background": new java.awt.Color( 217, 217, 217, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Entrar"
+				"background": new java.awt.Color( 57, 154, 185, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Senha:"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField1"
+				"background": new java.awt.Color( 217, 217, 217, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "NotWorking"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 20, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Esqueceu senha?"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Não possui conta? Crie agora"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 500 )
+			"size": new java.awt.Dimension( 975, 555 )
+		} )
+	}
+}
