@@ -1,11 +1,10 @@
-JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
 
 new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq {space :p:131:p, comp panel1:::p::p}, seq l {space :p:518:p, comp label1:::p::p}}"
-			"$verticalGroup": "par l {seq t {space ::48:x, comp label1:::p::p, space :p:32:p, comp panel1:::p::p, space :p:48:p}}"
+
 		} ) {
 			name: "Stats"
 			"background": new java.awt.Color( 255, 255, 255, 255 )
@@ -15,8 +14,7 @@ new FormModel {
 				"font": new java.awt.Font( "Segoe UI", 0, 28 )
 			} )
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-				"$horizontalGroup": "par l {seq l {space :p:32:p, comp panel2:::p::p, space ::175:x}}"
-				"$verticalGroup": "par l {seq l {space :p:28:p, comp panel2:::p::p, space ::354:x}}"
+
 			} ) {
 				name: "panel1"
 				"background": new java.awt.Color( 217, 217, 217, 255 )

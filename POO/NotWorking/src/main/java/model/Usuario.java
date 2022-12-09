@@ -26,7 +26,7 @@ public class Usuario
 	public String getNome(){
 		return this.nome;
 	}
-	public String getMatricula(){
+	public int getMatricula(){
 		return this.matricula;
 	}
 	
@@ -37,10 +37,7 @@ public class Usuario
 	public void enviarProblema(Problema problema){
 		System.out.println("enviando problema");
 	}
+	public void cadastrarUser(Usuario admin) {}
 	
 	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return "Nome: " + this.nome + "\nMatricula: " + this.matricula;
-	}
-}
+

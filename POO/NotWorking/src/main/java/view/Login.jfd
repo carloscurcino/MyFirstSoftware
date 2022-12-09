@@ -1,11 +1,8 @@
-JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
-
 new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq t {space :p:433:p, par l {seq l {comp label5:::::x, space :99:99:p}, comp label4:::::x, seq l {comp label3:::::x, space :37:37:p}, comp passwordField1::t:::x, comp textField2::t:::x, comp textField1::t:::x, comp button1::t:::x, seq l {comp label2:::::x, space :132:132:p}, seq l {comp label1:::::x, space :37:37:p}, seq l {comp label6:::::x, space :13:13:p}}, space :p:389:p}}"
-			"$verticalGroup": "par l {seq l {space :p:91:p, comp label4::::44:x, space :p:41:p, comp label1:::::x, space :p::p, comp textField1:::::x, space u:p::p, comp label2:::::x, space :p::p, comp textField2:::::x, space :p::p, comp label3:::::x, space :p:2:p, comp passwordField1:::::x, space s:p::p, comp button1::::38:x, space :p::p, comp label5:::::x, space :p::p, comp label6::::20:x, space :p:129:p}}"
+
 		} ) {
 			name: "Login"
 			"background": sfield java.awt.Color white
