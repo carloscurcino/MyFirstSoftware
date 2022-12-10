@@ -4,8 +4,8 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq t {comp panel1:::p::p, space :p:110:p, par c {comp label2:1:c:p::p, comp label3:1:c:p:296:p, comp label1::c:p:336:p}, space :p:133:p}}"
-			"$verticalGroup": "par l {seq l {comp panel1:::::x, space :::p}, seq l {space :p:188:p, comp label1:2::p::p, space :::p, comp label2:2::p:25:p, space :p::p, comp label3:2::p:25:p, space ::227:x}}"
+			"$horizontalGroup": "par l {seq t {comp panel1:::p::p, space ::126:x, par l {comp label2::l:p::p, comp label1::l:p:336:p, comp label3::l:p:373:p}, space ::80:x}}"
+			"$verticalGroup": "par l {seq l {space ::193:x, comp label1:::p::p, space :::p, comp label2:::p:25:p, space :::p, comp label3:::p:25:p, space ::244:x}, comp panel1::t:::x}"
 		} ) {
 			name: "AdmTela"
 			"background": sfield java.awt.Color white
@@ -25,8 +25,8 @@ new FormModel {
 				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 18, true )
 			} )
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-				"$horizontalGroup": "par l {seq l {space :p:18:p, par l:::p {comp button2:::::x, comp button3::l:::x, comp button1::l:p:203:p}, space ::25:x}}"
-				"$verticalGroup": "par l {seq l {space :p:155:p, comp button1:::p:55:p, space s:::p, comp button3:::p:53:p, space s:::p, comp button2:::p:53:p, space ::177:x}}"
+				"$horizontalGroup": "par l {seq l {space ::18:x, par l:::p {comp button2:::::x, comp button3::l:::x, comp button1::l:p:203:p}, space ::25:x}}"
+				"$verticalGroup": "par l {seq {space ::148:x, comp button1:::p:55:p, space ::25:x, comp button3:::p:53:p, space ::27:x, comp button2:::p:53:p, space ::174:x}}"
 			} ) {
 				name: "panel1"
 				"background": new java.awt.Color( 57, 154, 185, 255 )

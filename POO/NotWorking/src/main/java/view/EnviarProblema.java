@@ -19,7 +19,7 @@ public class EnviarProblema {
 
 	private void initComponents() {
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
-		// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
+		// Generated using JFormDesigner Evaluation license - Carlos Daniel Curcino Mendes
 		enviarP = new JPanel();
 		textArea1 = new JTextArea();
 		label1 = new JLabel();
@@ -38,12 +38,13 @@ public class EnviarProblema {
 		//======== enviarP ========
 		{
 			enviarP.setBackground(Color.white);
-			enviarP.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing. border
-			. EmptyBorder( 0, 0, 0, 0) , "JF\u006frm\u0044es\u0069gn\u0065r \u0045va\u006cua\u0074io\u006e", javax. swing. border. TitledBorder. CENTER, javax
-			. swing. border. TitledBorder. BOTTOM, new java .awt .Font ("D\u0069al\u006fg" ,java .awt .Font .BOLD ,
-			12 ), java. awt. Color. red) ,enviarP. getBorder( )) ); enviarP. addPropertyChangeListener (new java. beans
-			. PropertyChangeListener( ){ @Override public void propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062or\u0064er" .equals (e .
-			getPropertyName () )) throw new RuntimeException( ); }} );
+			enviarP.setBorder ( new javax . swing. border .CompoundBorder ( new javax . swing. border .TitledBorder ( new javax . swing
+			. border .EmptyBorder ( 0, 0 ,0 , 0) ,  "JF\u006frmDes\u0069gner \u0045valua\u0074ion" , javax. swing .border . TitledBorder
+			. CENTER ,javax . swing. border .TitledBorder . BOTTOM, new java. awt .Font ( "D\u0069alog", java .
+			awt . Font. BOLD ,12 ) ,java . awt. Color .red ) ,enviarP. getBorder () ) )
+			; enviarP. addPropertyChangeListener( new java. beans .PropertyChangeListener ( ){ @Override public void propertyChange (java . beans. PropertyChangeEvent e
+			) { if( "\u0062order" .equals ( e. getPropertyName () ) )throw new RuntimeException( ) ;} } )
+			;
 
 			//---- textArea1 ----
 			textArea1.setBackground(new Color(0xd9d9d9));
@@ -91,89 +92,78 @@ public class EnviarProblema {
 			enviarP.setLayout(enviarPLayout);
 			enviarPLayout.setHorizontalGroup(
 				enviarPLayout.createParallelGroup()
-					.addGroup(GroupLayout.Alignment.TRAILING, enviarPLayout.createSequentialGroup()
-						.addGap(85, 85, 85)
+					.addGroup(enviarPLayout.createSequentialGroup()
+						.addGap(58, 58, 58)
 						.addGroup(enviarPLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
 							.addGroup(enviarPLayout.createSequentialGroup()
 								.addGroup(enviarPLayout.createParallelGroup()
-									.addComponent(textArea1)
+									.addComponent(textArea1, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+									.addComponent(button1, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
 									.addGroup(enviarPLayout.createSequentialGroup()
-										.addComponent(button1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-										.addGap(308, 308, 308))
-									.addGroup(enviarPLayout.createSequentialGroup()
-										.addComponent(label6, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-										.addGap(364, 364, 364)))
-								.addGap(28, 28, 28)
+										.addComponent(label6, GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE)
+										.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 378, Short.MAX_VALUE)))
+								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
 								.addGroup(enviarPLayout.createParallelGroup()
-									.addComponent(textArea5)
-									.addComponent(textArea3)
-									.addComponent(textArea4, GroupLayout.Alignment.TRAILING)
 									.addGroup(enviarPLayout.createSequentialGroup()
 										.addGroup(enviarPLayout.createParallelGroup()
-											.addGroup(enviarPLayout.createSequentialGroup()
-												.addComponent(label3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-												.addGap(19, 19, 19))
-											.addComponent(label5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-											.addGroup(enviarPLayout.createSequentialGroup()
-												.addComponent(label4, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-												.addGap(11, 11, 11)))
-										.addGap(165, 165, 165))))
-							.addGroup(enviarPLayout.createSequentialGroup()
-								.addComponent(button2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addGap(240, 240, 240)
-								.addGroup(enviarPLayout.createParallelGroup()
+											.addComponent(textArea4, GroupLayout.Alignment.TRAILING)
+											.addComponent(textArea3)
+											.addComponent(label3, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+											.addComponent(textArea5, GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE))
+										.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE))
 									.addGroup(enviarPLayout.createSequentialGroup()
-										.addComponent(label2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-										.addGap(230, 230, 230))
-									.addComponent(textArea2))))
-						.addGap(59, 59, 59))
-					.addGroup(enviarPLayout.createSequentialGroup()
-						.addGap(320, 320, 320)
-						.addComponent(label1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addGap(335, 335, 335))
+										.addGroup(enviarPLayout.createParallelGroup()
+											.addComponent(label5, GroupLayout.PREFERRED_SIZE, 222, GroupLayout.PREFERRED_SIZE)
+											.addComponent(label4, GroupLayout.PREFERRED_SIZE, 217, GroupLayout.PREFERRED_SIZE))
+										.addGap(0, 0, Short.MAX_VALUE))))
+							.addComponent(label1, GroupLayout.Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+							.addGroup(enviarPLayout.createSequentialGroup()
+								.addComponent(button2, GroupLayout.DEFAULT_SIZE, 421, Short.MAX_VALUE)
+								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+								.addGroup(enviarPLayout.createParallelGroup()
+									.addComponent(label2, GroupLayout.PREFERRED_SIZE, 88, GroupLayout.PREFERRED_SIZE)
+									.addComponent(textArea2, GroupLayout.PREFERRED_SIZE, 233, GroupLayout.PREFERRED_SIZE))
+								.addGap(0, 27, Short.MAX_VALUE)))
+						.addGap(21, 21, 21))
 			);
 			enviarPLayout.setVerticalGroup(
 				enviarPLayout.createParallelGroup()
 					.addGroup(enviarPLayout.createSequentialGroup()
-						.addGap(30, 30, 30)
-						.addComponent(label1, GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
-						.addGap(51, 51, 51)
-						.addComponent(label2, GroupLayout.DEFAULT_SIZE, 13, Short.MAX_VALUE)
-						.addGap(15, 15, 15)
+						.addContainerGap(15, Short.MAX_VALUE)
+						.addComponent(label1, GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+						.addComponent(label2, GroupLayout.DEFAULT_SIZE, 15, Short.MAX_VALUE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addGroup(enviarPLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+							.addComponent(button2, GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
+							.addComponent(textArea2, GroupLayout.PREFERRED_SIZE, 33, GroupLayout.PREFERRED_SIZE))
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+						.addComponent(label6, GroupLayout.DEFAULT_SIZE, 15, Short.MAX_VALUE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addGroup(enviarPLayout.createParallelGroup()
 							.addGroup(enviarPLayout.createSequentialGroup()
-								.addComponent(textArea2, GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
-								.addGap(8, 8, 8))
-							.addGroup(enviarPLayout.createSequentialGroup()
-								.addGap(1, 1, 1)
-								.addComponent(button2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)))
-						.addComponent(label6, GroupLayout.DEFAULT_SIZE, 13, Short.MAX_VALUE)
-						.addGap(1, 1, 1)
-						.addGroup(enviarPLayout.createParallelGroup()
-							.addGroup(enviarPLayout.createSequentialGroup()
-								.addComponent(label3, GroupLayout.DEFAULT_SIZE, 17, Short.MAX_VALUE)
+								.addComponent(label3, GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
 								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(textArea5, GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
-								.addGap(33, 33, 33)
-								.addComponent(label4, GroupLayout.DEFAULT_SIZE, 17, Short.MAX_VALUE)
+								.addComponent(textArea5, GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+								.addComponent(label4, GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
 								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(textArea4, GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-								.addGap(38, 38, 38)
-								.addComponent(label5, GroupLayout.DEFAULT_SIZE, 17, Short.MAX_VALUE)
+								.addComponent(textArea4, GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+								.addComponent(label5, GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
 								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(textArea3, GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE))
-							.addComponent(textArea1, GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE))
-						.addGap(18, 18, 18)
-						.addComponent(button1, GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
-						.addGap(26, 26, 26))
+								.addComponent(textArea3, GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE))
+							.addComponent(textArea1, GroupLayout.PREFERRED_SIZE, 260, GroupLayout.PREFERRED_SIZE))
+						.addGap(18, 18, Short.MAX_VALUE)
+						.addComponent(button1, GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
+						.addContainerGap(13, Short.MAX_VALUE))
 			);
 		}
 		// JFormDesigner - End of component initialization  //GEN-END:initComponents  @formatter:on
 	}
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables  @formatter:off
-	// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
+	// Generated using JFormDesigner Evaluation license - Carlos Daniel Curcino Mendes
 	private JPanel enviarP;
 	private JTextArea textArea1;
 	private JLabel label1;

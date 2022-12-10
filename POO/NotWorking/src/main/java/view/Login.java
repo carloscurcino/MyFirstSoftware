@@ -19,7 +19,7 @@ public class Login extends JPanel {
 
 	private void initComponents() {
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
-		// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
+		// Generated using JFormDesigner Evaluation license - Carlos Daniel Curcino Mendes
 		Login = new JPanel();
 		label1 = new JLabel();
 		textField1 = new JTextField();
@@ -35,13 +35,12 @@ public class Login extends JPanel {
 		//======== Login ========
 		{
 			Login.setBackground(Color.white);
-			Login.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing
-			. border. EmptyBorder( 0, 0, 0, 0) , "JF\u006frmD\u0065sig\u006eer \u0045val\u0075ati\u006fn", javax. swing. border. TitledBorder
-			. CENTER, javax. swing. border. TitledBorder. BOTTOM, new java .awt .Font ("Dia\u006cog" ,java .
-			awt .Font .BOLD ,12 ), java. awt. Color. red) ,Login. getBorder( )) )
-			; Login. addPropertyChangeListener (new java. beans. PropertyChangeListener( ){ @Override public void propertyChange (java .beans .PropertyChangeEvent e
-			) {if ("\u0062ord\u0065r" .equals (e .getPropertyName () )) throw new RuntimeException( ); }} )
-			;
+			Login.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax.swing.border.
+			EmptyBorder(0,0,0,0), "JF\u006frmD\u0065sig\u006eer \u0045val\u0075ati\u006fn",javax.swing.border.TitledBorder.CENTER,javax.swing
+			.border.TitledBorder.BOTTOM,new java.awt.Font("Dia\u006cog",java.awt.Font.BOLD,12),
+			java.awt.Color.red),Login. getBorder()));Login. addPropertyChangeListener(new java.beans.PropertyChangeListener()
+			{@Override public void propertyChange(java.beans.PropertyChangeEvent e){if("\u0062ord\u0065r".equals(e.getPropertyName()))
+			throw new RuntimeException();}});
 
 			//---- label1 ----
 			label1.setText("Nome:");
@@ -79,62 +78,59 @@ public class Login extends JPanel {
 			Login.setLayout(LoginLayout);
 			LoginLayout.setHorizontalGroup(
 				LoginLayout.createParallelGroup()
-					.addGroup(GroupLayout.Alignment.TRAILING, LoginLayout.createSequentialGroup()
-						.addGap(433, 433, 433)
+					.addGroup(LoginLayout.createSequentialGroup()
+						.addContainerGap(417, Short.MAX_VALUE)
 						.addGroup(LoginLayout.createParallelGroup()
 							.addGroup(LoginLayout.createSequentialGroup()
-								.addComponent(label5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addGap(99, 99, 99))
-							.addComponent(label4, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+								.addComponent(label4, GroupLayout.PREFERRED_SIZE, 208, GroupLayout.PREFERRED_SIZE)
+								.addGap(0, 350, Short.MAX_VALUE))
+							.addComponent(label2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+							.addComponent(label1, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
 							.addGroup(LoginLayout.createSequentialGroup()
-								.addComponent(label3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addGap(37, 37, 37))
-							.addComponent(passwordField1, GroupLayout.Alignment.TRAILING)
-							.addComponent(textField2, GroupLayout.Alignment.TRAILING)
-							.addComponent(textField1, GroupLayout.Alignment.TRAILING)
-							.addComponent(button1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-							.addGroup(LoginLayout.createSequentialGroup()
-								.addComponent(label2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addGap(132, 132, 132))
-							.addGroup(LoginLayout.createSequentialGroup()
-								.addComponent(label1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addGap(37, 37, 37))
-							.addGroup(LoginLayout.createSequentialGroup()
-								.addComponent(label6, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addGap(13, 13, 13)))
-						.addGap(389, 389, 389))
+								.addGroup(LoginLayout.createParallelGroup()
+									.addGroup(LoginLayout.createSequentialGroup()
+										.addGroup(LoginLayout.createParallelGroup()
+											.addComponent(label5, GroupLayout.PREFERRED_SIZE, 187, GroupLayout.PREFERRED_SIZE)
+											.addComponent(label6, GroupLayout.PREFERRED_SIZE, 218, GroupLayout.PREFERRED_SIZE)
+											.addComponent(button1, GroupLayout.PREFERRED_SIZE, 187, GroupLayout.PREFERRED_SIZE)
+											.addComponent(textField1, GroupLayout.PREFERRED_SIZE, 187, GroupLayout.PREFERRED_SIZE)
+											.addComponent(textField2, GroupLayout.PREFERRED_SIZE, 187, GroupLayout.PREFERRED_SIZE)
+											.addComponent(passwordField1, GroupLayout.PREFERRED_SIZE, 187, GroupLayout.PREFERRED_SIZE))
+										.addGap(0, 334, Short.MAX_VALUE))
+									.addComponent(label3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+								.addContainerGap())))
 			);
 			LoginLayout.setVerticalGroup(
 				LoginLayout.createParallelGroup()
 					.addGroup(LoginLayout.createSequentialGroup()
-						.addGap(91, 91, 91)
+						.addContainerGap(95, Short.MAX_VALUE)
 						.addComponent(label4, GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-						.addGap(41, 41, 41)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
 						.addComponent(label1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-						.addComponent(textField1)
-						.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(textField1, GroupLayout.PREFERRED_SIZE, 28, GroupLayout.PREFERRED_SIZE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(label2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-						.addComponent(textField2)
-						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(textField2, GroupLayout.PREFERRED_SIZE, 28, GroupLayout.PREFERRED_SIZE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(label3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addGap(2, 2, 2)
-						.addComponent(passwordField1)
-						.addGap(18, 18, 18)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(passwordField1, GroupLayout.PREFERRED_SIZE, 28, GroupLayout.PREFERRED_SIZE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(button1, GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
-						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(label5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(label6, GroupLayout.DEFAULT_SIZE, 20, Short.MAX_VALUE)
-						.addGap(129, 129, 129))
+						.addContainerGap(122, Short.MAX_VALUE))
 			);
 		}
 		// JFormDesigner - End of component initialization  //GEN-END:initComponents  @formatter:on
 	}
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables  @formatter:off
-	// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
+	// Generated using JFormDesigner Evaluation license - Carlos Daniel Curcino Mendes
 	private JPanel Login;
 	private JLabel label1;
 	private JTextField textField1;

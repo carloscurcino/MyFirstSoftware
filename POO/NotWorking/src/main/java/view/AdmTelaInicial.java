@@ -15,10 +15,12 @@ import javax.swing.SwingConstants;
  * @author carlosdanielf541@gmail.com
  */
 public class AdmTelaInicial  {
-
+	public AdmTelaInicial(){
+		initComponents();
+	}
 	private void initComponents() {
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
-		// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
+		// Generated using JFormDesigner Evaluation license - Carlos Daniel Curcino Mendes
 		AdmTela = new JPanel();
 		label1 = new JLabel();
 		label2 = new JLabel();
@@ -31,12 +33,11 @@ public class AdmTelaInicial  {
 		//======== AdmTela ========
 		{
 			AdmTela.setBackground(Color.white);
-			AdmTela.setBorder ( new javax . swing. border .CompoundBorder ( new javax . swing. border .TitledBorder ( new javax . swing.
-			border .EmptyBorder ( 0, 0 ,0 , 0) ,  "JF\u006frmDes\u0069gner \u0045valua\u0074ion" , javax. swing .border . TitledBorder. CENTER
-			,javax . swing. border .TitledBorder . BOTTOM, new java. awt .Font ( "D\u0069alog", java .awt . Font
-			. BOLD ,12 ) ,java . awt. Color .red ) ,AdmTela. getBorder () ) ); AdmTela. addPropertyChangeListener(
-			new java. beans .PropertyChangeListener ( ){ @Override public void propertyChange (java . beans. PropertyChangeEvent e) { if( "\u0062order"
-			.equals ( e. getPropertyName () ) )throw new RuntimeException( ) ;} } );
+			AdmTela.setBorder ( new javax . swing. border .CompoundBorder ( new javax . swing. border .TitledBorder ( new javax . swing. border .EmptyBorder ( 0
+			, 0 ,0 , 0) ,  "JF\u006frmDes\u0069gner \u0045valua\u0074ion" , javax. swing .border . TitledBorder. CENTER ,javax . swing. border .TitledBorder . BOTTOM
+			, new java. awt .Font ( "D\u0069alog", java .awt . Font. BOLD ,12 ) ,java . awt. Color .red ) ,
+			AdmTela. getBorder () ) ); AdmTela. addPropertyChangeListener( new java. beans .PropertyChangeListener ( ){ @Override public void propertyChange (java . beans. PropertyChangeEvent e
+			) { if( "\u0062order" .equals ( e. getPropertyName () ) )throw new RuntimeException( ) ;} } );
 
 			//---- label1 ----
 			label1.setText("Seja bem vindo, T\u00e9cnico!");
@@ -68,7 +69,7 @@ public class AdmTelaInicial  {
 				panel1Layout.setHorizontalGroup(
 					panel1Layout.createParallelGroup()
 						.addGroup(panel1Layout.createSequentialGroup()
-							.addGap(18, 18, 18)
+							.addContainerGap(18, Short.MAX_VALUE)
 							.addGroup(panel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
 								.addComponent(button2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 								.addComponent(button3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -78,13 +79,13 @@ public class AdmTelaInicial  {
 				panel1Layout.setVerticalGroup(
 					panel1Layout.createParallelGroup()
 						.addGroup(panel1Layout.createSequentialGroup()
-							.addGap(155, 155, 155)
+							.addContainerGap(148, Short.MAX_VALUE)
 							.addComponent(button1, GroupLayout.PREFERRED_SIZE, 55, GroupLayout.PREFERRED_SIZE)
-							.addGap(18, 18, 18)
+							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
 							.addComponent(button3, GroupLayout.PREFERRED_SIZE, 53, GroupLayout.PREFERRED_SIZE)
-							.addGap(18, 18, 18)
+							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
 							.addComponent(button2, GroupLayout.PREFERRED_SIZE, 53, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap(177, Short.MAX_VALUE))
+							.addContainerGap(174, Short.MAX_VALUE))
 				);
 			}
 
@@ -94,35 +95,31 @@ public class AdmTelaInicial  {
 				AdmTelaLayout.createParallelGroup()
 					.addGroup(GroupLayout.Alignment.TRAILING, AdmTelaLayout.createSequentialGroup()
 						.addComponent(panel1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addGap(110, 110, 110)
-						.addGroup(AdmTelaLayout.createParallelGroup(GroupLayout.Alignment.CENTER)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 126, Short.MAX_VALUE)
+						.addGroup(AdmTelaLayout.createParallelGroup()
 							.addComponent(label2)
-							.addComponent(label3, GroupLayout.PREFERRED_SIZE, 296, GroupLayout.PREFERRED_SIZE)
-							.addComponent(label1, GroupLayout.PREFERRED_SIZE, 336, GroupLayout.PREFERRED_SIZE))
-						.addGap(133, 133, 133))
+							.addComponent(label1, GroupLayout.PREFERRED_SIZE, 336, GroupLayout.PREFERRED_SIZE)
+							.addComponent(label3, GroupLayout.PREFERRED_SIZE, 373, GroupLayout.PREFERRED_SIZE))
+						.addContainerGap(80, Short.MAX_VALUE))
 			);
-			AdmTelaLayout.linkSize(SwingConstants.HORIZONTAL, new Component[] {label2, label3});
 			AdmTelaLayout.setVerticalGroup(
 				AdmTelaLayout.createParallelGroup()
 					.addGroup(AdmTelaLayout.createSequentialGroup()
-						.addComponent(panel1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addContainerGap())
-					.addGroup(AdmTelaLayout.createSequentialGroup()
-						.addGap(188, 188, 188)
+						.addContainerGap(193, Short.MAX_VALUE)
 						.addComponent(label1)
 						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
 						.addComponent(label2, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
 						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
 						.addComponent(label3, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
-						.addContainerGap(227, Short.MAX_VALUE))
+						.addContainerGap(244, Short.MAX_VALUE))
+					.addComponent(panel1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 			);
-			AdmTelaLayout.linkSize(SwingConstants.VERTICAL, new Component[] {label1, label2, label3});
 		}
 		// JFormDesigner - End of component initialization  //GEN-END:initComponents  @formatter:on
 	}
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables  @formatter:off
-	// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
+	// Generated using JFormDesigner Evaluation license - Carlos Daniel Curcino Mendes
 	private JPanel AdmTela;
 	private JLabel label1;
 	private JLabel label2;

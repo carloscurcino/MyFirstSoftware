@@ -15,14 +15,14 @@ import model.BusinesRule;
 /**
  * @author carlosdanielf541@gmail.com
  */
-public class cad implements BusinesRule{
-	public cad() {
+public class Cad{
+	public Cad() {
 		initComponents();
 	}
 
 	private void initComponents() {
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
-		// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
+		// Generated using JFormDesigner Evaluation license - Carlos Daniel Curcino Mendes
 		test = new JPanel();
 		label1 = new JLabel();
 		textField1 = new JTextField();
@@ -37,13 +37,12 @@ public class cad implements BusinesRule{
 		//======== test ========
 		{
 			test.setBackground(Color.white);
-			test.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new
-			javax. swing. border. EmptyBorder( 0, 0, 0, 0) , "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax
-			. swing. border. TitledBorder. CENTER, javax. swing. border. TitledBorder. BOTTOM, new java
-			.awt .Font ("D\u0069alog" ,java .awt .Font .BOLD ,12 ), java. awt
-			. Color. red) ,test. getBorder( )) ); test. addPropertyChangeListener (new java. beans.
-			PropertyChangeListener( ){ @Override public void propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062order" .
-			equals (e .getPropertyName () )) throw new RuntimeException( ); }} );
+			test.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing. border
+			. EmptyBorder( 0, 0, 0, 0) , "JF\u006frmD\u0065sig\u006eer \u0045val\u0075ati\u006fn", javax. swing. border. TitledBorder. CENTER, javax
+			. swing. border. TitledBorder. BOTTOM, new java .awt .Font ("Dia\u006cog" ,java .awt .Font .BOLD ,
+			12 ), java. awt. Color. red) ,test. getBorder( )) ); test. addPropertyChangeListener (new java. beans
+			. PropertyChangeListener( ){ @Override public void propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062ord\u0065r" .equals (e .
+			getPropertyName () )) throw new RuntimeException( ); }} );
 
 			//---- label1 ----
 			label1.setText("Nome:");
@@ -70,58 +69,53 @@ public class cad implements BusinesRule{
 			testLayout.setHorizontalGroup(
 				testLayout.createParallelGroup()
 					.addGroup(testLayout.createSequentialGroup()
-						.addGap(345, 345, 345)
+						.addGap(331, 331, 331)
 						.addGroup(testLayout.createParallelGroup()
+							.addGroup(testLayout.createParallelGroup()
+								.addComponent(label4, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+								.addComponent(label1, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+								.addComponent(passwordField1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+								.addComponent(textField2, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+								.addComponent(textField1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+								.addComponent(button1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+								.addComponent(label2, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+								.addGroup(testLayout.createSequentialGroup()
+									.addComponent(label5, GroupLayout.PREFERRED_SIZE, 236, GroupLayout.PREFERRED_SIZE)
+									.addGap(0, 0, Short.MAX_VALUE)))
 							.addGroup(testLayout.createSequentialGroup()
-								.addComponent(label5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addGap(40, 40, 40))
-							.addGroup(testLayout.createSequentialGroup()
-								.addComponent(label4, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addGap(14, 14, 14))
-							.addGroup(testLayout.createSequentialGroup()
-								.addComponent(label3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addGap(37, 37, 37))
-							.addGroup(testLayout.createSequentialGroup()
-								.addComponent(label1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addGap(37, 37, 37))
-							.addComponent(passwordField1, GroupLayout.Alignment.TRAILING)
-							.addComponent(textField2, GroupLayout.Alignment.TRAILING)
-							.addComponent(textField1, GroupLayout.Alignment.TRAILING)
-							.addComponent(button1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-							.addGroup(testLayout.createSequentialGroup()
-								.addComponent(label2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addGap(132, 132, 132)))
-						.addGap(362, 362, 362))
+								.addComponent(label3, GroupLayout.PREFERRED_SIZE, 91, GroupLayout.PREFERRED_SIZE)
+								.addGap(183, 183, 183)))
+						.addGap(290, 290, 290))
 			);
 			testLayout.setVerticalGroup(
 				testLayout.createParallelGroup()
-					.addGroup(GroupLayout.Alignment.TRAILING, testLayout.createSequentialGroup()
-						.addGap(113, 113, 113)
+					.addGroup(testLayout.createSequentialGroup()
+						.addGap(116, 116, 116)
 						.addComponent(label4, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addGap(33, 33, 33)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
 						.addComponent(label1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(textField1)
-						.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
 						.addComponent(label2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
 						.addComponent(textField2)
 						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
 						.addComponent(label3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addGap(2, 2, 2)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(passwordField1)
-						.addGap(18, 18, 18)
-						.addComponent(button1, GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+						.addGap(18, 18, Short.MAX_VALUE)
+						.addComponent(button1, GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
 						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
 						.addComponent(label5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addGap(146, 146, 146))
+						.addGap(142, 142, 142))
 			);
 		}
 		// JFormDesigner - End of component initialization  //GEN-END:initComponents  @formatter:on
 	}
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables  @formatter:off
-	// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
+	// Generated using JFormDesigner Evaluation license - Carlos Daniel Curcino Mendes
 	private JPanel test;
 	private JLabel label1;
 	private JTextField textField1;
@@ -136,7 +130,7 @@ public class cad implements BusinesRule{
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
 		frame.pack();
-		frame.setContentPane(new cad().test);
+		frame.setContentPane(new Cad().test);
 		frame.setSize(895, 560);
 		frame.setVisible(true);
 	}

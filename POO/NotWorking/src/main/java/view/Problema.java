@@ -19,7 +19,7 @@ public class Problema {
 
 	private void initComponents() {
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
-		// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
+		// Generated using JFormDesigner Evaluation license - Carlos Daniel Curcino Mendes
 		Problem = new JPanel();
 		label1 = new JLabel();
 		panel1 = new JPanel();
@@ -38,13 +38,12 @@ public class Problema {
 		//======== Problem ========
 		{
 			Problem.setBackground(Color.white);
-			Problem.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax
-			. swing. border. EmptyBorder( 0, 0, 0, 0) , "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax. swing
-			. border. TitledBorder. CENTER, javax. swing. border. TitledBorder. BOTTOM, new java .awt .
-			Font ("D\u0069alog" ,java .awt .Font .BOLD ,12 ), java. awt. Color. red
-			) ,Problem. getBorder( )) ); Problem. addPropertyChangeListener (new java. beans. PropertyChangeListener( ){ @Override
-			public void propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062order" .equals (e .getPropertyName (
-			) )) throw new RuntimeException( ); }} );
+			Problem.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing. border.
+			EmptyBorder( 0, 0, 0, 0) , "JF\u006frmD\u0065sig\u006eer \u0045val\u0075ati\u006fn", javax. swing. border. TitledBorder. CENTER, javax. swing
+			. border. TitledBorder. BOTTOM, new java .awt .Font ("Dia\u006cog" ,java .awt .Font .BOLD ,12 ),
+			java. awt. Color. red) ,Problem. getBorder( )) ); Problem. addPropertyChangeListener (new java. beans. PropertyChangeListener( )
+			{ @Override public void propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062ord\u0065r" .equals (e .getPropertyName () ))
+			throw new RuntimeException( ); }} );
 
 			//---- label1 ----
 			label1.setText("Problema");
@@ -137,14 +136,14 @@ public class Problema {
 					panel5Layout.setHorizontalGroup(
 						panel5Layout.createParallelGroup()
 							.addGroup(panel5Layout.createSequentialGroup()
-								.addGap(24, 24, 24)
+								.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 								.addComponent(label7)
 								.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 					);
 					panel5Layout.setVerticalGroup(
 						panel5Layout.createParallelGroup()
 							.addGroup(panel5Layout.createSequentialGroup()
-								.addContainerGap()
+								.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 								.addComponent(label7)
 								.addContainerGap(10, Short.MAX_VALUE))
 					);
@@ -161,7 +160,7 @@ public class Problema {
 				label5.setFont(label5.getFont().deriveFont(label5.getFont().getStyle() | Font.BOLD, 13f));
 
 				//---- label8 ----
-				label8.setText("Resolu\u00e7\u00e3o de status");
+				label8.setIcon(new ImageIcon(getClass().getResource("/clock-icon.png")));
 
 				GroupLayout panel1Layout = new GroupLayout(panel1);
 				panel1.setLayout(panel1Layout);
@@ -169,7 +168,7 @@ public class Problema {
 					panel1Layout.createParallelGroup()
 						.addGroup(panel1Layout.createSequentialGroup()
 							.addComponent(panel2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addGap(42, 42, 42)
+							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
 							.addGroup(panel1Layout.createParallelGroup()
 								.addGroup(panel1Layout.createSequentialGroup()
 									.addGroup(panel1Layout.createParallelGroup(GroupLayout.Alignment.TRAILING, false)
@@ -178,34 +177,36 @@ public class Problema {
 											.addGroup(panel1Layout.createParallelGroup()
 												.addComponent(label4)
 												.addComponent(panel4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-											.addGap(36, 36, 36)
+											.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 											.addGroup(panel1Layout.createParallelGroup()
 												.addComponent(panel5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-												.addComponent(label5, GroupLayout.Alignment.TRAILING))))
+												.addGroup(panel1Layout.createSequentialGroup()
+													.addComponent(label5)
+													.addGap(0, 0, Short.MAX_VALUE)))))
 									.addContainerGap(76, Short.MAX_VALUE))
 								.addGroup(panel1Layout.createSequentialGroup()
 									.addComponent(label2, GroupLayout.PREFERRED_SIZE, 197, GroupLayout.PREFERRED_SIZE)
-									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
+									.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 170, Short.MAX_VALUE)
 									.addComponent(label8)
-									.addGap(65, 65, 65))))
+									.addContainerGap(65, Short.MAX_VALUE))))
 				);
 				panel1Layout.setVerticalGroup(
 					panel1Layout.createParallelGroup()
 						.addComponent(panel2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addGroup(panel1Layout.createSequentialGroup()
-							.addGap(27, 27, 27)
+							.addContainerGap(27, Short.MAX_VALUE)
 							.addGroup(panel1Layout.createParallelGroup()
 								.addComponent(label2, GroupLayout.PREFERRED_SIZE, 28, GroupLayout.PREFERRED_SIZE)
 								.addComponent(label8))
-							.addGap(18, 18, 18)
+							.addGap(18, 18, Short.MAX_VALUE)
 							.addGroup(panel1Layout.createParallelGroup(GroupLayout.Alignment.TRAILING)
 								.addComponent(label4)
 								.addComponent(label5))
-							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+							.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 							.addGroup(panel1Layout.createParallelGroup(GroupLayout.Alignment.TRAILING)
 								.addComponent(panel4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 								.addComponent(panel5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-							.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+							.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 							.addComponent(panel3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 							.addContainerGap(40, Short.MAX_VALUE))
 				);
@@ -216,29 +217,29 @@ public class Problema {
 			ProblemLayout.setHorizontalGroup(
 				ProblemLayout.createParallelGroup()
 					.addGroup(ProblemLayout.createSequentialGroup()
-						.addGap(446, 446, 446)
-						.addComponent(label1)
-						.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-					.addGroup(GroupLayout.Alignment.TRAILING, ProblemLayout.createSequentialGroup()
-						.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(panel1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addGap(110, 110, 110))
+						.addContainerGap(45, Short.MAX_VALUE)
+						.addGroup(ProblemLayout.createParallelGroup()
+							.addComponent(panel1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+							.addGroup(GroupLayout.Alignment.TRAILING, ProblemLayout.createSequentialGroup()
+								.addComponent(label1)
+								.addGap(389, 389, 389)))
+						.addContainerGap(66, Short.MAX_VALUE))
 			);
 			ProblemLayout.setVerticalGroup(
 				ProblemLayout.createParallelGroup()
 					.addGroup(ProblemLayout.createSequentialGroup()
-						.addGap(29, 29, 29)
+						.addContainerGap(23, Short.MAX_VALUE)
 						.addComponent(label1)
 						.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
 						.addComponent(panel1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addContainerGap(68, Short.MAX_VALUE))
+						.addContainerGap(62, Short.MAX_VALUE))
 			);
 		}
 		// JFormDesigner - End of component initialization  //GEN-END:initComponents  @formatter:on
 	}
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables  @formatter:off
-	// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
+	// Generated using JFormDesigner Evaluation license - Carlos Daniel Curcino Mendes
 	private JPanel Problem;
 	private JLabel label1;
 	private JPanel panel1;

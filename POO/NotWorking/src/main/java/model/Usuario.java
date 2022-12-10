@@ -34,13 +34,12 @@ public class Usuario
 	public void adicionarFoto(){
 		System.out.println("adicionando foto");
 	}
-	public void enviarProblema(Problema problema){
+	public <Problema> void enviarProblema(Problema problema){
 		System.out.println("enviando problema");
 	}
-	
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return "Nome: " + this.nome + "\nMatricula: " + this.matricula;
+	public void cadastrarUser(Usuario admin) {
+		System.out.println(admin);
 	}
-}
+	}
+	
+

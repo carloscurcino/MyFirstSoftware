@@ -13,10 +13,12 @@ import javax.swing.GroupLayout;
  * @author carlosdanielf541@gmail.com
  */
 public class ProblemasResolvidos  {
-
+	public ProblemasResolvidos(){
+		initComponents();
+	}
 	private void initComponents() {
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
-		// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
+		// Generated using JFormDesigner Evaluation license - Carlos Daniel Curcino Mendes
 		problemResolv = new JPanel();
 		label1 = new JLabel();
 		panel1 = new JPanel();
@@ -27,16 +29,16 @@ public class ProblemasResolvidos  {
 		//======== problemResolv ========
 		{
 			problemResolv.setBackground(Color.white);
-			problemResolv.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new
-			javax.swing.border.EmptyBorder(0,0,0,0), "JFor\u006dDesi\u0067ner \u0045valu\u0061tion",javax
-			.swing.border.TitledBorder.CENTER,javax.swing.border.TitledBorder.BOTTOM,new java
-			.awt.Font("Dia\u006cog",java.awt.Font.BOLD,12),java.awt
-			.Color.red),problemResolv. getBorder()));problemResolv. addPropertyChangeListener(new java.beans.
-			PropertyChangeListener(){@Override public void propertyChange(java.beans.PropertyChangeEvent e){if("bord\u0065r".
-			equals(e.getPropertyName()))throw new RuntimeException();}});
+			problemResolv.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax.
+			swing. border. EmptyBorder( 0, 0, 0, 0) , "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax. swing. border
+			. TitledBorder. CENTER, javax. swing. border. TitledBorder. BOTTOM, new java .awt .Font ("D\u0069alog"
+			,java .awt .Font .BOLD ,12 ), java. awt. Color. red) ,problemResolv. getBorder
+			( )) ); problemResolv. addPropertyChangeListener (new java. beans. PropertyChangeListener( ){ @Override public void propertyChange (java
+			.beans .PropertyChangeEvent e) {if ("\u0062order" .equals (e .getPropertyName () )) throw new RuntimeException
+			( ); }} );
 
 			//---- label1 ----
-			label1.setText("Problemas Resolvidas");
+			label1.setText("Problemas Resolvidos");
 			label1.setFont(new Font("Segoe UI", Font.PLAIN, 28));
 
 			//======== panel1 ========
@@ -53,25 +55,25 @@ public class ProblemasResolvidos  {
 					label2.setFont(new Font("Segoe UI", Font.PLAIN, 20));
 
 					//---- label3 ----
-					label3.setText("Desenho check");
 					label3.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+					label3.setIcon(new ImageIcon(getClass().getResource("/checkResized.png")));
 
 					GroupLayout panel2Layout = new GroupLayout(panel2);
 					panel2.setLayout(panel2Layout);
 					panel2Layout.setHorizontalGroup(
 						panel2Layout.createParallelGroup()
 							.addGroup(panel2Layout.createSequentialGroup()
-								.addGap(95, 95, 95)
+								.addContainerGap(22, Short.MAX_VALUE)
 								.addComponent(label2)
-								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 315, Short.MAX_VALUE)
+								.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 425, Short.MAX_VALUE)
 								.addComponent(label3)
-								.addGap(72, 72, 72))
+								.addContainerGap(35, Short.MAX_VALUE))
 					);
 					panel2Layout.setVerticalGroup(
 						panel2Layout.createParallelGroup()
 							.addGroup(panel2Layout.createSequentialGroup()
-								.addGap(29, 29, 29)
-								.addGroup(panel2Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+								.addContainerGap(29, Short.MAX_VALUE)
+								.addGroup(panel2Layout.createParallelGroup()
 									.addComponent(label2)
 									.addComponent(label3))
 								.addContainerGap(31, Short.MAX_VALUE))
@@ -83,14 +85,14 @@ public class ProblemasResolvidos  {
 				panel1Layout.setHorizontalGroup(
 					panel1Layout.createParallelGroup()
 						.addGroup(panel1Layout.createSequentialGroup()
-							.addGap(32, 32, 32)
+							.addContainerGap(32, Short.MAX_VALUE)
 							.addComponent(panel2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addContainerGap(175, Short.MAX_VALUE))
+							.addContainerGap(32, Short.MAX_VALUE))
 				);
 				panel1Layout.setVerticalGroup(
 					panel1Layout.createParallelGroup()
 						.addGroup(panel1Layout.createSequentialGroup()
-							.addGap(28, 28, 28)
+							.addContainerGap(28, Short.MAX_VALUE)
 							.addComponent(panel2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 							.addContainerGap(354, Short.MAX_VALUE))
 				);
@@ -101,30 +103,29 @@ public class ProblemasResolvidos  {
 			problemResolvLayout.setHorizontalGroup(
 				problemResolvLayout.createParallelGroup()
 					.addGroup(problemResolvLayout.createSequentialGroup()
-						.addGroup(problemResolvLayout.createParallelGroup()
-							.addGroup(problemResolvLayout.createSequentialGroup()
-								.addGap(131, 131, 131)
-								.addComponent(panel1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-							.addGroup(problemResolvLayout.createSequentialGroup()
-								.addGap(377, 377, 377)
-								.addComponent(label1)))
-						.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+						.addContainerGap(95, Short.MAX_VALUE)
+						.addComponent(panel1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addContainerGap(90, Short.MAX_VALUE))
+					.addGroup(problemResolvLayout.createSequentialGroup()
+						.addGap(321, 321, 321)
+						.addComponent(label1)
+						.addContainerGap(350, Short.MAX_VALUE))
 			);
 			problemResolvLayout.setVerticalGroup(
 				problemResolvLayout.createParallelGroup()
 					.addGroup(GroupLayout.Alignment.TRAILING, problemResolvLayout.createSequentialGroup()
-						.addContainerGap(62, Short.MAX_VALUE)
+						.addContainerGap(64, Short.MAX_VALUE)
 						.addComponent(label1)
-						.addGap(18, 18, 18)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 						.addComponent(panel1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addGap(48, 48, 48))
+						.addContainerGap(39, Short.MAX_VALUE))
 			);
 		}
 		// JFormDesigner - End of component initialization  //GEN-END:initComponents  @formatter:on
 	}
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables  @formatter:off
-	// Generated using JFormDesigner Evaluation license - carlosdanielf541@gmail.com
+	// Generated using JFormDesigner Evaluation license - Carlos Daniel Curcino Mendes
 	private JPanel problemResolv;
 	private JLabel label1;
 	private JPanel panel1;
