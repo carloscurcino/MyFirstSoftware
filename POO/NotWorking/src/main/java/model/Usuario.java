@@ -26,7 +26,7 @@ public class Usuario
 	public String getNome(){
 		return this.nome;
 	}
-	public int getMatricula(){
+	public String getMatricula(){
 		return this.matricula;
 	}
 	
@@ -34,10 +34,12 @@ public class Usuario
 	public void adicionarFoto(){
 		System.out.println("adicionando foto");
 	}
-	public void enviarProblema(Problema problema){
+	public <Problema> void enviarProblema(Problema problema){
 		System.out.println("enviando problema");
 	}
-	public void cadastrarUser(Usuario admin) {}
+	public void cadastrarUser(Usuario admin) {
+		System.out.println(admin);
+	}
+	}
 	
-	@Override
 

@@ -1,8 +1,11 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
 new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-
+			"$horizontalGroup": "par l {seq {space ::45:x, par l {comp panel1:::p::p, seq t {comp label1:::p::p, space :p:389:p}}, space ::66:x}}"
+			"$verticalGroup": "par l {seq l {space ::23:x, comp label1:::p::p, space u:::p, comp panel1:::p::p, space ::62:x}}"
 		} ) {
 			name: "Problem"
 			"background": new java.awt.Color( 255, 255, 255, 255 )
@@ -12,7 +15,8 @@ new FormModel {
 				"font": new java.awt.Font( "Segoe UI", 0, 28 )
 			} )
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-
+				"$horizontalGroup": "par l {seq l {comp panel2:::p::p, space ::42:x, par l {seq l {par t:::p {comp panel3::l:p::p, seq l {par l {comp label4::l:p::p, comp panel4::l:p::p}, space :::x, par l {comp panel5:::::x, seq {comp label5:::p::p, space :0:0:x}}}}, space ::76:x}, seq l {comp label2:::p:197:p, space ::170:x, comp label8:::p::p, space ::65:x}}}}"
+				"$verticalGroup": "par l {comp panel2::l:::x, seq l {space ::27:x, par l {comp label2:::p:28:p, comp label8:::p::p}, space s:::x, par t {comp label4:::p::p, comp label5:::p::p}, space :::x, par t {comp panel4:::p::p, comp panel5:::p::p}, space u:::x, comp panel3:::p::p, space ::40:x}}"
 			} ) {
 				name: "panel1"
 				"background": new java.awt.Color( 57, 154, 185, 255 )
@@ -52,8 +56,8 @@ new FormModel {
 					} )
 				} )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {seq l {space :p:24:p, comp label7:::p::p, space :::x}}"
-					"$verticalGroup": "par l {seq l {space :::p, comp label7:::p::p, space ::10:x}}"
+					"$horizontalGroup": "par l {seq l {space :::x, comp label7:::p::p, space :::x}}"
+					"$verticalGroup": "par l {seq l {space :::x, comp label7:::p::p, space ::10:x}}"
 				} ) {
 					name: "panel5"
 					"background": new java.awt.Color( 255, 255, 255, 255 )
@@ -76,7 +80,7 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "label8"
-					"text": "Resolução de status"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/clock-icon.png" )
 				} )
 			} )
 		}, new FormLayoutConstraints( null ) {

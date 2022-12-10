@@ -1,0 +1,52 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space ::100:x, par l {comp label1:::p::p, comp panel1:::::x}, space ::95:x}}"
+			"$verticalGroup": "par l {seq t {space ::42:x, comp label1:::p::p, space ::37:x, comp panel1:::::x, space ::49:x}}"
+		} ) {
+			name: "AdmProblemas"
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Problemas a resolver"
+				"font": new java.awt.Font( "Segoe UI", 0, 28 )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space ::29:x, comp panel2:::p::p, space ::29:x}}"
+				"$verticalGroup": "par l {seq t {space ::29:x, comp panel2:::p::p, space ::353:x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 217, 217, 217, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space ::32:x, comp label2:::p::p, space ::382:x, comp comboBox1:::p::p, space ::45:x}}"
+					"$verticalGroup": "par l {seq l {space ::29:x, par b {comp label2::b:p::p, comp comboBox1::b:p::p}, space ::30:x}}"
+				} ) {
+					name: "panel2"
+					"background": new java.awt.Color( 57, 154, 185, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Titulo do problema"
+						"foreground": sfield java.awt.Color white
+						"font": new java.awt.Font( "Segoe UI", 0, 20 )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox1"
+						"cursor": new java.awt.Cursor( 12 )
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "Aguardando resolução"
+							addElement( "Aguardando resolução" )
+							addElement( "Em andamento" )
+							addElement( "Resolvido" )
+						}
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1035, 635 )
+		} )
+	}
+}
